@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyFavoriteThings.Things;
 
 namespace MyFavoriteThings
 {
@@ -10,7 +7,14 @@ namespace MyFavoriteThings
     {
         static void Main(string[] args)
         {
-
+            //Object Initialization
+            var beer = new Beers
+            {
+                Style = "Porter",
+                Brewery = "Founders",
+                Drinking = true
+            };
+            beer.ImOut(beer.Brewery, beer.Style);
         }
     }
 }

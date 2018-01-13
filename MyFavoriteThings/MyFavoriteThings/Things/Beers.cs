@@ -5,42 +5,59 @@ namespace MyFavoriteThings.Things
     class Beers
     {
        
-        private string _ipas;
-        private string _stouts;
+        private string _style;
+        private string _brewery;
+        protected bool _drinking;
 
-        public string ipas
+        public string Style
         {
             get
             {
-                return _ipas;
+                return _style;
             }
             set
             {
-                _ipas = value;
+                _style = value;
             }
         }
 
-        public string stouts
+        public string Brewery
         {
             get
             {
-                return _stouts;
+                return _brewery;
             }
             set
             {
-                _stouts = value;
+                _brewery = value;
             }
         }
 
-        public bool Drinking(string drinking)
-        {
-            drinking = _stouts;
-            return true;
+        public bool Drinking
+        { 
+            get
+            {
+                return true;
+            }
+            set
+            {
+                if (value)
+                {
+                    _drinking = true;
+                }
+                if (!value)
+                {
+                    _drinking = false;
+                }
+            }
         }
 
-        public string ImOut()
+        public string ImOut(string Brewery, string Style)
         {
-            return ("I'll have another");
+            
+                Console.WriteLine("I'll have another " + _brewery + " " + _style + ".");
+                return ("done");
+            
         }
     }
 }
