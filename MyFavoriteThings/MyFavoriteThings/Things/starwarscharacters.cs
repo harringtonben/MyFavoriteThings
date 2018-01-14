@@ -6,7 +6,7 @@ namespace MyFavoriteThings.Things
     {
         private string _jedi;
         private string _sith;
-        private bool _isdead;
+        private bool _isDead;
 
         public string Jedi
         {
@@ -31,5 +31,31 @@ namespace MyFavoriteThings.Things
                 _sith = value;
             }
         }
+
+        public bool IsDead
+        {
+            get
+            {
+                return true;
+            }
+            set
+            {
+                if (value)
+                {
+                    _isDead = true;
+                }
+                if (!value)
+                {
+                    _isDead = false;
+                }
+            }
+        }
+
+        public string JediBattle(string Jedi, string Sith)
+        {
+            Console.WriteLine($"{_jedi} fought {_sith}, and {_jedi} beat {_sith}");
+            return "done";
+        }
+
     }
 }

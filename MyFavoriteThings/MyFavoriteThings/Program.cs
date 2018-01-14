@@ -15,6 +15,15 @@ namespace MyFavoriteThings
                 Drinking = true
             };
             beer.ImOut(beer.Brewery, beer.Style);
+
+            //Object Initialization
+            var starwars = new starwarscharacters
+            {
+                Jedi = "Obi Wan Kenobi",
+                Sith = "Darth Vader",
+                IsDead = false
+            };
+            starwars.JediBattle(starwars.Jedi, starwars.Sith);
         }
     }
 }
