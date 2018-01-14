@@ -36,7 +36,7 @@ namespace MyFavoriteThings.Things
         {
             get
             {
-                return true;
+                return _isDead;
             }
             set
             {

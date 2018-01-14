@@ -37,7 +37,7 @@ namespace MyFavoriteThings.Things
         { 
             get
             {
-                return true;
+                return _drinking;
             }
             set
             {

@@ -24,6 +24,15 @@ namespace MyFavoriteThings
                 IsDead = false
             };
             starwars.JediBattle(starwars.Jedi, starwars.Sith);
+
+            //Object Initialization
+            var steaks = new Steaks
+            {
+                Type = "ribeye",
+                CookingTemp = "medium rare",
+                IsCookedWell = false
+            };
+            steaks.MyDinner(steaks.Type, steaks.CookingTemp);
         }
     }
 }
