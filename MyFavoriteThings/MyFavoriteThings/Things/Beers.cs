@@ -54,9 +54,9 @@ namespace MyFavoriteThings.Things
 
         public string ImOut(string Brewery, string Style)
         {
-            
-                Console.WriteLine("I'll have another " + _brewery + " " + _style + ".");
-                return ("done");
+
+            return "I'll have another " + _brewery + " " + _style + ".";
+                 
             
         }
     }
