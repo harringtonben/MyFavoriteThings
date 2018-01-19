@@ -61,8 +61,15 @@ namespace MyFavoriteThings
 
             var steaks = new List<Steaks>
             {
-
+                new Steaks { Type = "Filet", CookingTemp = "Medium Rare", IsCookedWell = true},
+                new Steaks { Type = "Ribeye", CookingTemp = "Medium Rare", IsCookedWell = true},
+                new Steaks { Type = "Flank", CookingTemp = "Medium Well", IsCookedWell = false}
             };
+
+            foreach (var steak in steaks)
+            {
+                Console.WriteLine(steak.MyDinner(steak.Type, steak.CookingTemp));
+            }
 
             var BBQ = new List<bbq>
             {
