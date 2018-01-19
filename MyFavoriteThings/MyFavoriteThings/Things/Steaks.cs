@@ -54,16 +54,9 @@ namespace MyFavoriteThings.Things
 
         public string MyDinner(string Type, string CookingTemp)
         {
-            if (IsCookedWell)
-            {
-                Console.WriteLine($"I had a really good {_type} cooked {_cookingtemp}.");
-            }
-            if (!IsCookedWell)
-            {
-                Console.WriteLine($"I had a really bad {_type} cooked {_cookingtemp}.");
-            }
-            return "tasty";
-            
+            return IsCookedWell
+                ? $"I had a really good {_type} cooked {_cookingtemp}."
+                : $"I had a really bad {_type} cooked {_cookingtemp}.";
         }
 
 
