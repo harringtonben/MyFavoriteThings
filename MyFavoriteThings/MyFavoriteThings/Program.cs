@@ -47,7 +47,22 @@ namespace MyFavoriteThings
                 Console.WriteLine(beer.ImOut(beer.Style, beer.Brewery));
             }
 
+            var StarWars = new List<starwarscharacters>
+            {
+                new starwarscharacters { Jedi = "Obi Wan Kenobi", Sith = "Darth Vader", IsDead = false},
+                new starwarscharacters { Jedi = "Yoda", Sith = "Darth Sidious", IsDead = true},
+                new starwarscharacters { Jedi = "Luke Skywalker", Sith = "Darth Vader", IsDead = false}
+            };
 
+            foreach (var character in StarWars)
+            {
+                Console.WriteLine(character.JediBattle(character.Jedi, character.Sith));
+            }
+
+            var steaks = new List<Steaks>
+            {
+
+            };
 
             var BBQ = new List<bbq>
             {

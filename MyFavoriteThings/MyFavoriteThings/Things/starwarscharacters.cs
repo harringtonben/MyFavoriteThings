@@ -53,8 +53,8 @@ namespace MyFavoriteThings.Things
 
         public string JediBattle(string Jedi, string Sith)
         {
-            Console.WriteLine($"{_jedi} fought {_sith}, and {_jedi} beat {_sith}");
-            return "done";
+            return $"{_jedi} fought {_sith}, and {_jedi} beat {_sith}";
+             
         }
 
     }
